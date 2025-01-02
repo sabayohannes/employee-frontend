@@ -9,7 +9,7 @@ const View = () => {
         const fetchEmployee = async () => {
             
             try {
-                const response = await axios.get(`http://localhost:5000/api/employee/${id}`, {
+                const response = await axios.get(`https://employee-api-wine.vercel.app/api/employee/${id}`, {
                     headers: {
                         'Authorization': `Bearer ${localStorage.getItem('token')}`,
                     },
@@ -26,7 +26,7 @@ const View = () => {
   return (
  <>   {employee ?( 
     <div>
-      <div><img src={`http://localhost:5000/${employee.userId.profileImage}`} className='rounded-full border w-72'/></div>
+      <div><img src={`https://employee-api-wine.vercel.app/${employee.userId.profileImage}`} className='rounded-full border w-72'/></div>
 <h2 className='text-2x1 font-bold mb-8 text-center'> Employee Details</h2>
       <div className='flex space-x-3'>
         <p className='text-lg font-bold'>Name:</p>

@@ -54,7 +54,7 @@ Object.keys(formData).forEach((key)=>{
 
 
 try{
-const response= await axios.post('http://localhost:5000/api/employee/add',fromDataObj,{
+const response= await axios.post('https://employee-api-wine.vercel.app/api/employee/add',fromDataObj,{
     headers:{
         'Authorization':`Bearer ${localStorage.getItem('token')}`
     }

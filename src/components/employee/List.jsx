@@ -13,7 +13,7 @@ const List = () => {
     const fetchEmployee = async () => {
       setEmpLoading(true);
       try {
-        const response = await axios.get("http://localhost:5000/api/employee", {
+        const response = await axios.get("https://employee-api-wine.vercel.app/api/employee", {
           headers: {
             'Authorization': `Bearer ${localStorage.getItem('token')}`
           }
@@ -23,7 +23,7 @@ const List = () => {
           const data = response.data.employees.map((emp, index) => ({
             _id: emp._id,
             profileImage: emp.userId?.profileImage ? (
-              <img width={60} className='rounded-full' src={`http://localhost:5000/${emp.userId.profileImage}`} />
+              <img width={60} className='rounded-full' src={`https://employee-api-wine.vercel.app/${emp.userId.profileImage}`} />
             ) : (
               <img width={60} className='rounded-full' src="default-profile.jpg" /> // Default image if missing
             ),
