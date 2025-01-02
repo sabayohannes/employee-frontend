@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import axios from 'axios';
-import User from '../../../../server/models/User';
-import AuthContext, { useAuth } from '../../context/AuthContext';
+import { useAuth } from '../../context/AuthContext';
 
 const List = () => {
   const { id }=useParams();
