@@ -2,7 +2,7 @@ import React, { useState ,useEffect} from 'react'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
 
-const view = () => {
+const View = () => {
     const {id} =useParams();
     const [employee,setEmployee]=useState(null)
     useEffect(() => { 
@@ -59,4 +59,4 @@ const view = () => {
   )
 }
 
-export default view;
+export default View;
