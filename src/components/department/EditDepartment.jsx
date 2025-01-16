@@ -39,7 +39,7 @@ const EditDepartment = () => {
         e.preventDefault();
   
         try {
-            const response = await axios.put(`https://employee-api-wine.vercel.app/api/department/${id}`, department, {
+            const response = await axios.put(`https://employee-api-theta.vercel.app/api/department/${id}`, department, {
                 headers: {
                     'Authorization': `Bearer ${localStorage.getItem('token')}`,
                 },

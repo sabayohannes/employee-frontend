@@ -12,7 +12,7 @@ const [filteredleaves,setFilteredleaves]=useState(null);
 
     const fetchLeaves=async () =>{
         try {
-            const response = await axios.get("https://employee-api-wine.vercel.app/api/leave", {
+            const response = await axios.get("https://employee-api-theta.vercel.app/api/leave", {
               headers: {
                 'Authorization': `Bearer ${localStorage.getItem('token')}`
               }

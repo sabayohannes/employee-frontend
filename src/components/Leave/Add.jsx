@@ -25,7 +25,7 @@ const Add = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(`https://employee-api-wine.vercel.app/api/leave/add`, 
+      const response = await axios.post(`https://employee-api-theta.vercel.app/api/leave/add`, 
         leave, // Send leave data here
         {
           headers: {

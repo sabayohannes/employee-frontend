@@ -56,7 +56,7 @@ const Add = () => {
         
        
         try {
-            const response = await axios.post(`https://employee-api-wine.vercel.app/api/salary/add`, salaryData, {
+            const response = await axios.post(`https://employee-api-theta.vercel.app/api/salary/add`, salaryData, {
                 headers: {
                     'Authorization': `Bearer ${localStorage.getItem('token')}`,
                     'Content-Type': 'application/json' 

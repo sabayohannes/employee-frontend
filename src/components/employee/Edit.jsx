@@ -61,7 +61,7 @@ const Edit = () => {
         console.log("Submitting employee data:", employee);
 
         try {
-            const response = await axios.put(`https://employee-api-wine.vercel.app/api/employee/${id}`, employee, {
+            const response = await axios.put(`https://employee-api-theta.vercel.app/api/employee/${id}`, employee, {
                 headers: {
                     'Authorization': `Bearer ${localStorage.getItem('token')}`
                 }

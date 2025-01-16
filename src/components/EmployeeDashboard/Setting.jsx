@@ -31,7 +31,7 @@ const Setting = () => {
       setError("Passwords don't match!");
     } else {
       try {
-        const response = await axios.put("https://employee-api-wine.vercel.app/api/setting/change-Password", setting, {
+        const response = await axios.put("https://employee-api-theta.vercel.app/api/setting/change-Password", setting, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
           },

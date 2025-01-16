@@ -10,7 +10,7 @@ const [summary,setSummary]=useState(null)
     const fetchSummary=async()=>{
       try{
 
-const summary=await axios.get('https://employee-api-wine.vercel.app/api/dashboard/summary',{
+const summary=await axios.get('https://employee-api-theta.vercel.app/api/dashboard/summary',{
   headers:{
     Authorization: `Bearer ${localStorage.getItem('token')}`
   }

@@ -10,7 +10,7 @@ const navigate=useNavigate();
 
     const changeStatus= async(_id,status)=>{
       try {
-        const response = await axios.put(`https://employee-api-wine.vercel.app/api/leave/${id}`,{status}, {
+        const response = await axios.put(`https://employee-api-theta.vercel.app/api/leave/${id}`,{status}, {
             headers: {
                 'Authorization': `Bearer ${localStorage.getItem('token')}`,
             },
@@ -27,7 +27,7 @@ const navigate=useNavigate();
         const fetchEmployeeleave = async () => {
             
             try {
-                const response = await axios.get(`https://employee-api-wine.vercel.app/api/leave/detail/${id}`, {
+                const response = await axios.get(`https://employee-api-theta.vercel.app/api/leave/detail/${id}`, {
                     headers: {
                         'Authorization': `Bearer ${localStorage.getItem('token')}`,
                     },
@@ -47,7 +47,7 @@ const navigate=useNavigate();
 <h2 className='text-2x1 font-bold mb-8 text-center'> Leave Details</h2>
 
 <div>
-  <img src={`https://employee-api-wine.vercel.app/${leave.employeeId.userId.profileImage}`} className='rounded-full border w-72'/></div>
+  <img src={`https://employee-api-theta.vercel.app/${leave.employeeId.userId.profileImage}`} className='rounded-full border w-72'/></div>
       <div className='flex space-x-3 mb-2'>
         <p className='text-lg font-bold'>Name:</p>
         <p className='font-medium'>{leave.employeeId.userId.name}</p>

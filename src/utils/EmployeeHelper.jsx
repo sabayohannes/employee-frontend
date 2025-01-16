@@ -26,7 +26,7 @@ if(error.response&&!error.response.data.success)
 export const getEmployee=async (id)=>{
   let employees=[];
   try{
-      const response= await axios.get(`https://employee-api-wine.vercel.app/api/employee/department/${id}`,{
+      const response= await axios.get(`https://employee-api-theta.vercel.app/api/employee/department/${id}`,{
           headers:{
               'Authorization':`Bearer ${localStorage.getItem("token")}`,
           },
